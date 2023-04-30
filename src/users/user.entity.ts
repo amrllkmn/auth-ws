@@ -1,7 +1,7 @@
 import { Entity, PrimaryKey, Property } from '@mikro-orm/core';
 
 @Entity()
-export default class UserEntity {
+class UserEntity {
   @PrimaryKey()
   id: number;
 
@@ -14,3 +14,5 @@ export default class UserEntity {
   @Property({ hidden: true })
   password: string;
 }
+
+export default UserEntity;
